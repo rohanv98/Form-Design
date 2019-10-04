@@ -1,0 +1,45 @@
+<form class="container">
+  <div class="lg-form">
+    <h1>SingUp Form</h1>
+  </div>
+  <div class="inside-content">
+    <label><h4>User name:</h4></label>
+    <input type="text" placeholder="Enter user name" name="uname" required />
+    <label><h4>Email-id:</h4></label>
+    <input
+      type="email"
+      placeholder="Enter your mail-id"
+      name="uname"
+      required
+    />
+    <label><h4>Create Password:</h4></label>
+    <input
+      type="password"
+      placeholder="Enter your password"
+      name="upasswd-create"
+      required
+    />
+    <label><h4>Confirm Password:</h4></label>
+    <input
+      type="password"
+      placeholder="Enter same password"
+      name="upasswd-confirm"
+      required
+    />
+    <div class="rmnd-me">
+      <input type="checkbox" name="remember" /> Remember me
+    </div>
+    <div class="l-btn">
+      <button class="lg-btn" type="submit">SignUp</button>
+    </div>
+    <div class="down-form">
+      <div class="rg-nw">
+        Already you have account? <a routerLink="/login-page">Login </a>
+      </div>
+      <div class="fg-psw">
+        By creating an account you agree to our
+        <a href="/">Terms and conditions</a>
+      </div>
+    </div>
+  </div>
+</form>

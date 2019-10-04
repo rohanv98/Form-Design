@@ -1,0 +1,86 @@
+<!-- <h1>product-details works!</h1> -->
+
+<div class="container">
+  <div class="card">
+    <div class="parent">
+      <div class="photo">
+        <img src="{{ list.imageUrl }}" width="400px" height="300px" />
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div class="title">
+          <h2>{{ list.title }}</h2>
+        </div>
+        <div class="amount">
+          <h5>{{ list.price | currency: "INR" }}</h5>
+        </div>
+        <div class="bttn">
+          <a class="btn btn-danger bt btt">Buy Now</a>
+          <a class="btn btn-primary bt btt" (click)="cartitems(list)"
+            ><i style="color: white;" class="fas fa-shopping-cart cart-list"></i
+            >Add To Cart</a
+          >
+        </div>
+      </div>
+      <div class="description">
+        <table>
+          <tbody>
+            <tr>
+              <td class="label">OS</td>
+              <td class="value">Android</td>
+            </tr>
+            <tr>
+              <td class="label">RAM</td>
+              <td class="value">4 GB</td>
+            </tr>
+
+            <tr class="size-weight">
+              <td class="label">Item Weight</td>
+              <td class="value">150 g</td>
+            </tr>
+
+            <tr class="item-model-number">
+              <td class="label">Item model number</td>
+              <td class="value">1723</td>
+            </tr>
+
+            <tr>
+              <td class="label">Wireless communication technologies</td>
+              <td class="value">Bluetooth, WiFi Hotspot</td>
+            </tr>
+
+            <tr>
+              <td class="label">Camera features</td>
+              <td class="value">24MP(Front)5,18(Back)</td>
+            </tr>
+
+            <tr>
+              <td class="label">Weight</td>
+              <td class="value">150 Grams</td>
+            </tr>
+            <tr>
+              <td class="label">Colour</td>
+              <td class="value">Pearl Black</td>
+            </tr>
+            <tr>
+              <td class="label">Battery Power Rating</td>
+              <td class="value">3260</td>
+            </tr>
+            <tr>
+              <td class="label">Whats in the box</td>
+              <td class="value">
+                Handset, Earphone, User Manual, Micro USB to USB Cable, USB
+                Power Adapter, SIM Ejector Pin, Protective Case and Protective
+                Film (1 applied)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

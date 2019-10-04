@@ -1,0 +1,50 @@
+.bg-image {
+  margin-top: 10px;
+  position: relative;
+  background: url(D:\angular\template1-task\src\assets\dress.jpg) no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+}
+.bg-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.inner-contant {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.services {
+  margin-top: 50px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.icon {
+  color: brown;
+  font-size: 60px;
+}
+.service1 {
+  border: 1px solid gray;
+  text-align: center;
+  padding: 30px 0;
+  margin-right: 20px;
+}
+
+.service-line2 {
+  margin-top: 25px;
+}

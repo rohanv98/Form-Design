@@ -1,0 +1,35 @@
+<form class="container">
+  <div class="lg-form">
+    <h1>Login Form</h1>
+  </div>
+  <div class="inside-content">
+    <label><h4>User name:</h4></label>
+    <input type="text" placeholder="Enter user name" name="uname" required />
+    <label><h4>Password:</h4></label>
+    <input
+      type="password"
+      placeholder="Enter password"
+      [ngModel]="pass"
+      name="upasswd"
+      #password="ngModel"
+      minlength="4"
+      required
+    />
+    <div *ngIf="password.invalid">
+      <div *ngIf="password.errors.required">password is mandatory</div>
+      <div *ngIf="password.errors.minlength">
+        Mininmumdfsdhfgjdfs usfgh isfg
+      </div>
+    </div>
+    <div class="rmnd-me">
+      <input type="checkbox" name="remember" /> Remember me
+    </div>
+    <div class="l-btn">
+      <button class="lg-btn" type="submit">Login</button>
+    </div>
+    <div class="down-form">
+      <div class="rg-nw"><a routerLink="/signup-page">Register Now</a></div>
+      <div class="fg-psw"><a href="/">Forget password?</a></div>
+    </div>
+  </div>
+</form>
